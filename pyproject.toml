@@ -1,0 +1,37 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "house_pricing"
+version = "0.0.1"
+description = "Modelo de predicci\u00f3n de precios de casas"
+authors = [
+  { name = "Preng Biba" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.11.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["house_pricing"]
+include = ["pyproject.toml", "house_pricing/**/*.py"]
+extend-exclude = [".pixi"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["house_pricing"]
+force-sort-within-sections = true
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

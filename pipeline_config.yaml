@@ -1,0 +1,38 @@
+# Configuración del pipeline de house_pricing
+# Features seleccionadas en notebooks/1.0-pb-analisis-exploratorio.ipynb
+# (top 10 por grupo: continuas y discretas por |r|, categóricas por η)
+
+MODEL_FEATURES:
+  # Continuas
+  - GrLivArea
+  - GarageArea
+  - TotalBsmtSF
+  - 1stFlrSF
+  - YearBuilt
+  - YearRemodAdd
+  - GarageYrBlt
+  - MasVnrArea
+  - BsmtFinSF1
+  - LotFrontage
+  # Discretas
+  - OverallQual
+  - GarageCars
+  - FullBath
+  - TotRmsAbvGrd
+  - Fireplaces
+  - HalfBath
+  - BsmtFullBath
+  - BedroomAbvGr
+  - KitchenAbvGr
+  - MSSubClass
+  # Categóricas
+  - Neighborhood
+  - ExterQual
+  - BsmtQual
+  - KitchenQual
+  - GarageFinish
+  - FireplaceQu
+  - Foundation
+  - GarageType
+  - BsmtFinType1
+  - HeatingQC
