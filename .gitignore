@@ -6,6 +6,10 @@
 # Modelos entrenados: se regeneran con los notebooks 2.0 y 3.0
 /models/*.joblib
 
+# MLflow: tracking (SQLite) y artefactos locales
+/mlflow.db
+/mlruns/
+
 # Archivos de trabajo locales
 /PROXIMA_SESION.md
 /prompts_sesion_*.txt

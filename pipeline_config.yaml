@@ -36,3 +36,11 @@ MODEL_FEATURES:
   - GarageType
   - BsmtFinType1
   - HeatingQC
+
+# MLflow (rutas relativas a la raíz del proyecto)
+MLFLOW:
+  TRACKING_DB: mlflow.db
+  ARTIFACTS_DIR: mlruns
+  EXPERIMENTO_ENTRENAMIENTO: house_pricing_entrenamiento
+  EXPERIMENTO_INFERENCIA: house_pricing_inferencia
+  MODELO_REGISTRADO: house_pricing
